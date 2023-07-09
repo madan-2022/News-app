@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madan news app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <Header>
+        <nav>
+            <div class="main-nav container flex">
+                <a href="#" onclick="reload()">
+                    <img class="company-logo" src="Madan-designstyle-smoothie-m.png" alt="logo">
+
+                </a>
+                <div class="nav-links flex">
+                    <ul>
+                        <li class="nav-items" id="Politics" onclick="onNavItemClick('Finance')"><a href="#">Finance</a></li>
+                        <li class="nav-items" id="Sports" onclick="onNavItemClick('Sports')"><a href="#" >Sports</a></li>
+                        <li class="nav-items" id="Technology" onclick="onNavItemClick('Technology')"><a href="#">Technology</a></li>
+                        <li class="nav-items" id="Entertainment" onclick="onNavItemClick('Entertainment')"><a href="#">Entertainment</a></li>
+
+
+                    </ul>
+                    
+                </div>
+                <div class="search-bar">
+                    <input type="text" class="news-input" placeholder="e.g. Technology" id="search-bar">
+                    <button id="search-button">Search</button>
+                </div>
+
+
+            </div>
+
+        </nav>
+    </Header>
+    <main>
+        
+        <div class="cards-container container flex" id="cards-container">
+            
+            
+        </div>
+
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, asperiores, alias quae laborum hic, illo impedit magnam facere quo recusandae tempora! Tempora, illum debitis?</p>
+            </div>
+        </div>
+
+    </template>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
